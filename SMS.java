@@ -35,6 +35,7 @@ public class SMS extends JFrame implements KeyListener, ActionListener
 	  countsms(this.charcount);
 	  tlabel.setText("Number of characters: " + this.charcount + " and number of SMS is " + this.smscount);
 	  }
+	  this.repaint();
   }
   public void keyPressed(KeyEvent e)
   { 
@@ -47,6 +48,7 @@ public class SMS extends JFrame implements KeyListener, ActionListener
 	  JFrame sending = new JFrame();
 	  JLabel sendm = new JLabel("Sending SMS...");
 	  sending.add(sendm);
+	  this.repaint();
   }
   
   public void countsms(int charc)
