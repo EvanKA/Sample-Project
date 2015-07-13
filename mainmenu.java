@@ -53,6 +53,7 @@ public class mainmenu extends JFrame implements ActionListener
 	  {
 		  Phone pFrame = new Phone();
 		  pFrame.setVisible(true);
+		  pFrame.setSize(300,300);
 	  }
   }
   
