@@ -18,7 +18,7 @@ public class Phone extends JFrame implements ActionListener
 	JButton bh = new JButton("#");
 	JButton bs = new JButton("*");	
 	JButton bcall = new JButton("Call");
-    public String number = "";
+    protected String number = "";
     public Phone()
     { 
 	super("Phone app");

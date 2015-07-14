@@ -8,9 +8,9 @@ public class SMS extends JFrame implements KeyListener, ActionListener
 	JTextField receiver = new JTextField();
     JTextArea SMSarea = new JTextArea();
 	JButton send = new JButton("Send");
-    public String smstext;
-    public int charcount;
-    public int smscount;	
+    protected String smstext;
+    protected int charcount;
+    protected int smscount;	
     public SMS()
     { 
 	super("SMS app");
