@@ -8,10 +8,14 @@ public class mainmenu extends JFrame implements ActionListener
 	Container con = getContentPane();
 	GregorianCalendar curtime = new GregorianCalendar();
   		JLabel label1 = new JLabel("Current time is: " + curtime.get(GregorianCalendar.HOUR) + ":" + curtime.get(GregorianCalendar.MINUTE));
-		JButton bSMS = new JButton("SMS");
-		JButton bCalc = new JButton("Calculator");
-		JButton bPB = new JButton("Phonebook");
-		JButton bPhone = new JButton("Phone");
+		Icon sms = new ImageIcon(getClass().getResource("sms.png"));
+		JButton bSMS = new JButton("SMS", sms);
+		Icon calc = new ImageIcon(getClass().getResource("calc.png"));
+		JButton bCalc = new JButton("Calculator", calc);
+		Icon pb = new ImageIcon(getClass().getResource("pb.png"));
+		JButton bPB = new JButton("Phonebook", pb);
+		Icon phone = new ImageIcon(getClass().getResource("phone.png"));
+		JButton bPhone = new JButton("Phone", phone);
   public mainmenu()
   {
 	    super("Main menu");
@@ -56,5 +60,5 @@ public class mainmenu extends JFrame implements ActionListener
 		  pFrame.setSize(300,300);
 	  }
   }
-  
 }
+ 
